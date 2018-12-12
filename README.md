@@ -1,5 +1,5 @@
 # ![Icon](.README.md/icon32.png) Piano
-![piano](.README.md/piano.jpg)
+![piano](.README.md/piano.gif)
 
 ## Play test
 
