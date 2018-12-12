@@ -1,4 +1,4 @@
-# ![Icon](favicon.ico) Piano
+# ![Icon](.README.md/icon32.png) Piano
 ![piano](.README.md/piano.jpg)
 
 ## Play test
