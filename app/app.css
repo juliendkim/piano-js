@@ -1,0 +1,53 @@
+@charset "UTF-8";
+
+html, body {
+    margin: 0;
+    background-color: #000000dd;
+}
+.fixed-div {
+    position: fixed;
+    left: 0; top: 0;
+    right: 0; bottom: 0;
+}
+.background-image {
+    background: #00000099 url(../image/piano-1920.jpg) no-repeat center;
+    background-size: cover;
+    filter: blur(5px);
+    z-index: 1000000000;
+}
+.key-container {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 640px;
+    height: 242px;
+    transform: translate(-50%, -50%);
+    background: transparent url(../image/keyboard-640.png) no-repeat top left;
+    padding-top: 77px;
+    z-index: 1000000001;
+}
+.key-upper {
+    display: flex;
+    padding-left: 93px;
+}
+.key-lower {
+    display: flex;
+    margin-top: 2px;
+    padding-left: 72px;
+}
+.key {
+    border: none;
+    border-radius: 5px;
+    width: 38px;
+    height: 39px;
+    margin-right: 2px;
+    background-color: #ff000077;
+    transition: all .1s ease-in;
+}
+.key-none {
+    background-color: transparent;
+}
+.keydown {
+    background-color: #ffff00aa;
+    transform: scale(1.5);
+}

@@ -1,0 +1,80 @@
+# composer
+composer.phar
+vendor/
+
+# security
+config.php
+__test_rm
+
+# editor files
+.idea/
+.vscode/
+
+# dev files
+.expo/
+node_modules/
+npm-debug.*
+.npm
+.eslintcache
+*.log
+__pycache__/
+.cache
+*.pyc
+*.out
+venv
+.sass-cache
+
+# folder config
+.DS_Store
+Icon
+
+# To input ^M, press ctrl-V then ENTER in VI editor
+Desktop.ini
+
+# Xcode
+*.pbxuser
+*.mode1v3
+*.mode2v3
+*.perspectivev3
+*.xcuserstate
+project.xcworkspace/
+xcuserdata/
+Pods/
+
+# Mac files
+.AppleDouble
+.LSOverride
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+
+# Thumbnails
+._*
+Thumbs.db
+
+# generated
+build/
+.build/
+*.so
+*.tgz
+*.o
+*.pyc
+
+# runtime
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Backup files
+*.swp
+*~.nib
