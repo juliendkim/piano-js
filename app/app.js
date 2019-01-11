@@ -27,7 +27,7 @@ document.getElementById("audioList").innerHTML =
     keyAndAudio.map((keys, index) => `
         <div class="${index === 0 ? "key-upper" : "key-lower"}">
             ${keys.map(key => `
-                <div data-key="${key[0]}" class="key ${key[0] ? "" : "key-none"}"></div>
+                <div data-key="${key[0]}" class="key ${key[0] ? "" : "key-none"}" onClick="handlePlayKey(this,${key[0]})"></div>
                 ${key[0] ? `<audio data-key="${key[0]}" src="/piano/${key[1]}.mp3"></audio>` : ""}
             `).join("")}
         </div>`).join("");
@@ -36,11 +36,15 @@ window.addEventListener('keydown', event => {
     if (!keyAndAudio.some(keys => keys.some(key => key[0] === event.keyCode))) return;
 
     const div = document.querySelector(`div[data-key="${event.keyCode}"]`);
-    div.classList.add("keydown");
-    div.addEventListener("transitionend", () => div.classList.remove("keydown"));
+    handlePlayKey(div, event.keyCode);
+});
 
-    const audio = document.querySelector(`audio[data-key="${event.keyCode}"]`);
+const handlePlayKey = (obj, keyCode) => {
+    obj.classList.add("keydown");
+    obj.addEventListener("transitionend", () => obj.classList.remove("keydown"));
+
+    const audio = document.querySelector(`audio[data-key="${keyCode}"]`);
     audio.currentTime = 0;
     audio.play();
-    audio.onended = () => div.classList.remove("keydown");
-});
+    audio.onended = () => obj.classList.remove("keydown");
+};
