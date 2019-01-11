@@ -1,6 +1,8 @@
 # ![Icon](.README.md/icon32.png) Piano
 ![piano](.README.md/piano.gif)
 
+![Watch the video](.README.md/chop_waltz.mp4)]
+
 ## Play test
 
 * Play on [https://juliendkim.000webhostapp.com/](https://juliendkim.000webhostapp.com/)
