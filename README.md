@@ -1,8 +1,8 @@
 # ![Icon](.README.md/icon32.png) Piano
-* Old version
+* Old version  
 ![piano](.README.md/piano.gif)
 
-* New version : added Db5 D5 Eb5 E5
+* New version : added Db5 D5 Eb5 E5  
 [![Watch the video](.README.md/chop_waltz.png)](.README.md/chop_waltz.mp4)
 
 ## Play test
